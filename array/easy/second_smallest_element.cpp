@@ -95,7 +95,7 @@ void print(std::vector<int> &arr)
     std::cout << "[";
     for (int i = 0; i < size; i++)
     {
-        std::cout << i << ((i == (size - 1)) ? "" : ", ");
+        std::cout << arr[i] << ((i == (size - 1)) ? "" : ", ");
     }
     std::cout << "] ";
 }
@@ -114,3 +114,5 @@ int main()
     std::cout << "ans: " << ans[0] << ", " << ans[1] << std::endl;
     return 0;
 }
+
+// https://www.geeksforgeeks.org/problems/find-the-smallest-and-second-smallest-element-in-an-array3226/1

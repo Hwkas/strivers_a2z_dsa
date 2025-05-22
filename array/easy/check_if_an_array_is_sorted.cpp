@@ -29,3 +29,5 @@ int main()
     std::cout << "ans: " << (arraySortedOrNot(v) ? "True" : "False") << std::endl;
     return 0;
 }
+
+// https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1
