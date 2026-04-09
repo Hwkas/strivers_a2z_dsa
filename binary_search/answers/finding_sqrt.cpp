@@ -28,3 +28,5 @@ int main()
     std::cout << "Square root of " << x << " is: " << mySqrt(x) << std::endl;
     return 0;
 }
+
+// https://leetcode.com/problems/sqrtx/
