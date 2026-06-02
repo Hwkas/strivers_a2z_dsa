@@ -48,3 +48,5 @@ int main()
     std::cout << "Given strings are " << (isIsomorphic(s, t) ? "" : "not ") << "isomorphic." << std::endl;
     return 0;
 }
+
+// https://leetcode.com/problems/isomorphic-strings/submissions/
