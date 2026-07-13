@@ -87,6 +87,34 @@ Node *sortList(Node *head)
     return merge(left, right);
 }
 
+Node *quicksort(Node *begin, Node *end)
+{
+    if (begin == end || begin->next == end)
+    {
+        return begin;
+    }
+    int pivot = begin->data;
+    Node *prev = begin, *current = begin->next, *head = begin;
+    while (current != end)
+    {
+        if (current->data < pivot)
+        {
+            prev->next = current->next;
+            current->next = head;
+            head = current;
+            current = prev->next;
+        }
+        else
+        {
+            prev = current;
+            current = current->next;
+        }
+    }
+    head = quicksort(head, begin);
+    begin->next = quicksort(begin->next, end);
+    return head;
+}
+
 int main()
 {
     std::vector<int> v = {4, 2, 1, 3};
