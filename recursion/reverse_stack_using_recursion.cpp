@@ -54,4 +54,4 @@ int main()
     return 0;
 }
 
-// https://www.naukri.com/code360/problems/sort-a-stack_985275
+// https://www.naukri.com/code360/problems/reverse-stack-using-recursion_631875?leftPanelTabValue=PROBLEM
