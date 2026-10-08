@@ -67,8 +67,6 @@ std::vector<std::vector<int>> levelOrder(TreeNode *root)
 
     q.push(root);
 
-    int count = q.size();
-
     while (!q.empty())
     {
         std::vector<int> level;
